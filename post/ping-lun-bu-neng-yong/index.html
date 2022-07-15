@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>标签列表 | 一个蒟蒻的Blog&amp;&amp;笔记&amp;&amp;日记&amp;&amp;日志</title>
+<title>评论不能用？ | 一个蒟蒻的Blog&amp;&amp;笔记&amp;&amp;日记&amp;&amp;日志</title>
 <meta name="description" content="人月刀田木">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -15,6 +15,12 @@
 <link rel="stylesheet" href="https://gsblog.github.io/styles/main.css">
 
 
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
 
@@ -23,6 +29,7 @@
 
   </head>
   <body>
+  
     <nav class="navbar border fixed split-nav">
   <div class="nav-brand">
     <h3><a href="https://gsblog.github.io">一个蒟蒻的Blog&amp;&amp;笔记&amp;&amp;日记&amp;&amp;日志</a></h3>
@@ -79,16 +86,47 @@
     <div id="top" class="row site">
       <div class="sm-12 md-8 col">
         <div class="paper">
-          <h2 class="tag-list-title">标签列表</h2>
-          <div class="row tags-container">
+          <article class="article">
+            <h1>评论不能用？</h1>
+            <p class="article-meta">
+              2022-07-15
+              
+            </p>
             
-              <a href="https://gsblog.github.io/tag/miaomiao/" class="badge warning">
-                冒泡
-              </a>
-            
-          </div>
+            <div class="post-content">
+              <p>评论模块好像<strong>出了点问题</strong>。<br>
+谁知道怎么修复的，麻烦请发到 <strong>neoyuguo@163.com</strong>，我会<strong>第一时间查收！</strong><br>
+感谢！！！！<br>
+另外，本站用❤️发电（其实是用github发电）</p>
+
+            </div>
+          </article>
         </div>
+        <div class="paper" data-aos="fade-in">
+          
+            <div class="next-post">
+              <div class="next">
+                下一篇
+              </div>
+              <a href="https://gsblog.github.io/post/ha-ha/">
+                <h3 class="post-title">
+                  哈哈
+                </h3>
+              </a>
+            </div>
+          
+        </div>
+        
+          
+            <div class="paper" data-aos="fade-in">
+              <div id="gitalk-container"></div>
+            </div>
+          
+
+          
+        
       </div>
+
       <div class="sm-12 md-4 col sidebar">
   <div class="paper info-container">
     <img src="https://gsblog.github.io/images/avatar.png?v=1657852411332" class="no-responsive avatar">
@@ -153,7 +191,7 @@
     </div>
     <div class="row">
       
-        <a href="https://gsblog.github.io/tag/miaomiao/" class="badge ">
+        <a href="https://gsblog.github.io/tag/miaomiao/" class="badge warning">
           冒泡
         </a>
       
@@ -163,7 +201,8 @@
     欢迎访问我的 <a href="https://space.bilibili.com/2081372295">哔哩哔哩</a> | <a class="rss" href="https://gsblog.github.io/atom.xml" target="_blank">RSS</a>
   </div>
 </div>
-  
+
+
     </div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -175,6 +214,29 @@ AOS.init();
 hljs.initHighlightingOnLoad()
 
 </script>
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '5d836ef7ba7accf7796c',
+        clientSecret: 'c3c18dcb76f31475e45afc5b7802cc5027e8311a',
+        repo: 'Gsblog.github.io',
+        owner: 'Gsblog',
+        admin: ['Gsblog'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
 
 
 

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gsblog.github.io</id>
     <title>一个蒟蒻的Blog&amp;&amp;笔记&amp;&amp;日记&amp;&amp;日志</title>
-    <updated>2022-07-15T02:29:49.897Z</updated>
+    <updated>2022-07-15T02:33:34.654Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gsblog.github.io"/>
     <link rel="self" href="https://gsblog.github.io/atom.xml"/>
@@ -10,6 +10,18 @@
     <logo>https://gsblog.github.io/images/avatar.png</logo>
     <icon>https://gsblog.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, 一个蒟蒻的Blog&amp;&amp;笔记&amp;&amp;日记&amp;&amp;日志</rights>
+    <entry>
+        <title type="html"><![CDATA[评论不能用？]]></title>
+        <id>https://gsblog.github.io/post/ping-lun-bu-neng-yong/</id>
+        <link href="https://gsblog.github.io/post/ping-lun-bu-neng-yong/">
+        </link>
+        <updated>2022-07-15T02:29:55.000Z</updated>
+        <content type="html"><![CDATA[<p>评论模块好像<strong>出了点问题</strong>。<br>
+谁知道怎么修复的，麻烦请发到 <strong>neoyuguo@163.com</strong>，我会<strong>第一时间查收！</strong><br>
+感谢！！！！<br>
+另外，本站用❤️发电（其实是用github发电）</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[哈哈]]></title>
         <id>https://gsblog.github.io/post/ha-ha/</id>
