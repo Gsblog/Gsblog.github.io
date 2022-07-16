@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gsblog.github.io</id>
     <title>一个蒟蒻的Blog&amp;&amp;笔记&amp;&amp;日记&amp;&amp;日志</title>
-    <updated>2022-07-16T02:07:05.120Z</updated>
+    <updated>2022-07-16T02:54:40.790Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gsblog.github.io"/>
     <link rel="self" href="https://gsblog.github.io/atom.xml"/>
@@ -114,7 +114,27 @@ a.遍历--访问顺序<br>
 知识点7：前序，中序与后序：<br>
 a.前序：根左右 中序：左根右 后序：左右根<br>
 b.前/后 + 中 = 二叉树，前 + 后 = 啥也不是<br>
-c.通过前/后序找根，中序找左右子树</p>
+c.通过前/后序找根，中序找左右子树<br>
+知识点8：树与图的关系：树是无向无环连通图，点数=边数+1<br>
+例题2：<br>
+对于n个点，m条边的二叉树（m&gt;n），要删掉______条边让它变成树<br>
+分析：n = m + 1,m = n - 1，现m - ans = n - 1,则m - n + 1 = ans,删去m - n + 1条<br>
+例题3：<br>
+a * (b + c) * d 的后缀表达式为 ______<br>
+分析：根据概念可知，为 b c + a * d *<br>
+4.图<br>
+知识点9：关于图：<br>
+a)遍历方式<br>
+1.BFS：从近到远<br>
+2.DFS：一条路摸到黑<br>
+b)连通分量<br>
+无向图 连通分量<br>
+有向图 强连通 弱连通<br>
+一笔画问题：所有边都经过一次<br>
+每个点度数为偶数，任一点出发，都能一笔画：欧拉图<br>
+两个几点，一个起点，一个终点：半欧拉图<br>
+哈米尔顿图<br>
+所有点都经过一次</p>
 ]]></content>
     </entry>
     <entry>
