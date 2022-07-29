@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gsblog.github.io</id>
     <title>果&amp;blog</title>
-    <updated>2022-07-29T14:18:24.335Z</updated>
+    <updated>2022-07-29T14:22:33.666Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gsblog.github.io"/>
     <link rel="self" href="https://gsblog.github.io/atom.xml"/>
@@ -210,14 +210,20 @@ b)连通分量<br>
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[评论不能用？]]></title>
+        <title type="html"><![CDATA[评论能用，被我修好了]]></title>
         <id>https://gsblog.github.io/post/ping-lun-bu-neng-yong/</id>
         <link href="https://gsblog.github.io/post/ping-lun-bu-neng-yong/">
         </link>
         <updated>2022-07-15T02:29:55.000Z</updated>
-        <content type="html"><![CDATA[<p>评论模块好像出了点问题。<br>
-谁知道怎么修复的，麻烦请发到neoyuguo@163.com，我会第一时间查收！<br>
-感谢！！！！<br>
+        <content type="html"><![CDATA[<p>#首先感谢大家的支持。<br>
+之前用的Gitalk，要Github登录，非常不好用。<br>
+现在用了Valine，就好多了。<br>
+顺便在本贴发一下公告：<br>
+本蒟蒻啥也不会，求大家：<br>
+<strong>不要恶意攻击</strong><br>
+<strong>不要篡改数据库</strong><br>
+<strong>不要再评论区引战、恶意攻击</strong><br>
+<strong>看到本站的，求留下评论，最好留下个人主页，多个盆友多条路。</strong><br>
 另外，本站用❤️发电（其实是用github发电）</p>
 ]]></content>
     </entry>
