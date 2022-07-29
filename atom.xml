@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gsblog.github.io</id>
     <title>一个蒟蒻的Blog&amp;&amp;笔记&amp;&amp;日记&amp;&amp;日志</title>
-    <updated>2022-07-16T02:54:40.790Z</updated>
+    <updated>2022-07-29T05:08:46.196Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gsblog.github.io"/>
     <link rel="self" href="https://gsblog.github.io/atom.xml"/>
@@ -10,6 +10,57 @@
     <logo>https://gsblog.github.io/images/avatar.png</logo>
     <icon>https://gsblog.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, 一个蒟蒻的Blog&amp;&amp;笔记&amp;&amp;日记&amp;&amp;日志</rights>
+    <entry>
+        <title type="html"><![CDATA[关于模运算]]></title>
+        <id>https://gsblog.github.io/post/guan-yu-mo-yun-suan/</id>
+        <link href="https://gsblog.github.io/post/guan-yu-mo-yun-suan/">
+        </link>
+        <updated>2022-07-29T03:39:35.000Z</updated>
+        <summary type="html"><![CDATA[<p>(a + b) % m = (a % m + b % m) % m<br>
+(a - b) % m = (a % m + b % m + m) % m<br>
+(a * b) % m = ((a % m) * (b % m)) % m<br>
+然而<br>
+(a / b) % m != ((a % m) / (b % m)) % m</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>(a + b) % m = (a % m + b % m) % m<br>
+(a - b) % m = (a % m + b % m + m) % m<br>
+(a * b) % m = ((a % m) * (b % m)) % m<br>
+然而<br>
+(a / b) % m != ((a % m) / (b % m)) % m</p>
+<!-- more -->
+<p>使用模运算时， long long 比 int 慢</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[约数和定理：]]></title>
+        <id>https://gsblog.github.io/post/yue-shu-he-ding-li/</id>
+        <link href="https://gsblog.github.io/post/yue-shu-he-ding-li/">
+        </link>
+        <updated>2022-07-22T12:19:58.000Z</updated>
+        <content type="html"><![CDATA[<p>听起来很高大尚，其实很简单：</p>
+<p>对于一个大于 11 正整数 nn 可以分解质因数：</p>
+<p>n=p1<sup>{a1}*p2</sup>{a2}*p3<sup>{a3}*…*pk</sup>{ak}</p>
+<p>基本的分解质因数的定义，不会的话自己看这里。</p>
+<p>之后呢， nn 的 (a_1+1)(a_2+1)(a_3+1)…(a_k+1)个正约数的和为</p>
+<p>f(n)=(p1<sup>0+p1</sup>1+p1<sup>2+...+p1</sup>a1)(p2<sup>0+p2</sup>1+p2<sup>2+...+p2</sup>a2)+(pk<sup>0+pk</sup>1+pk<sup>2+...+pk</sup>ak)</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[TEST]]></title>
+        <id>https://gsblog.github.io/post/test/</id>
+        <link href="https://gsblog.github.io/post/test/">
+        </link>
+        <updated>2022-07-18T08:38:59.000Z</updated>
+        <content type="html"><![CDATA[<p><strong>test</strong><br>
+test<br>
+<code>test</code></p>
+<pre><code>t
+e
+s
+t
+</code></pre>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[OI“代码加速手法”（笑）]]></title>
         <id>https://gsblog.github.io/post/oidai-ma-jia-su-shou-fa-xiao/</id>
