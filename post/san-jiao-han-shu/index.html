@@ -2,12 +2,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="description" content="o3优化(嘿嘿!)
-#pragma GCC optimize(3)
-#pragma GCC optimize(&quot;Ofast&quot;)
-#pragma GCC optimize(&quot;inline&quot;)
-#prag..." />
-    <meta name="keywords" content="CSP-J知识点整理,日常" />
+    <meta name="description" content="现有三角形ABC
+
+则有斜边c，领边b与对边a
+设角BAC为 角d
+则
+sin(d) = a / c
+cos(d) = b / c
+tan(d) = a / b
+cot(d) = b / a
+*sec(d) = c / b
+*csc(d) ..." />
+    <meta name="keywords" content="数学学习" />
     <link rel="stylesheet" href="https://gsblog.github.io/media/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://gsblog.github.io/styles/main.css">
     <!-- 代码渲染风格css -->
@@ -25,7 +31,7 @@
     <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
     <!-- 数学公式 -->
     
-    <title>OI“代码加速手法”（笑）</title>
+    <title>三角函数</title>
 
     <!-- 大纲索引css调整 -->
     
@@ -1077,16 +1083,12 @@ menulist.eq(i).show();
                 
             </div>
             <div class="postinfo-detail">
-                <div class="postdate"><i class="fa fa-calendar"></i>2022-07-16</div>
-            <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 3 min read</div>
+                <div class="postdate"><i class="fa fa-calendar"></i>2022-07-29</div>
+            <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 1 min read</div>
             <div class="posttag">
                 
-                <a data-pjax href="https://gsblog.github.io/tag/CSP_juruo/" class="postlink">
-                    <i class="fa fa-tag"></i> CSP-J知识点整理
-                </a>
-                
-                <a data-pjax href="https://gsblog.github.io/tag/WA/" class="postlink">
-                    <i class="fa fa-tag"></i> 日常
+                <a data-pjax href="https://gsblog.github.io/tag/Nq0oFOU3J/" class="postlink">
+                    <i class="fa fa-tag"></i> 数学学习
                 </a>
                 
             </div>
@@ -1094,60 +1096,24 @@ menulist.eq(i).show();
         
         <div id="articlecontent">
             <div id="texttitle" style="text-align: center">
-                <h2 id="ptitle">OI“代码加速手法”（笑）</h2>
+                <h2 id="ptitle">三角函数</h2>
                 <!-- id 将作为查询条件 -->
-                <div id="pl" style="display:none">https://gsblog.github.io/post/oidai-ma-jia-su-shou-fa-xiao/</div>
+                <div id="pl" style="display:none">https://gsblog.github.io/post/san-jiao-han-shu/</div>
                 <div id="rootaddr" style="display:none">https://gsblog.github.io</div>
                 
             </div>
             <div class="text ">
-                <p>o3优化(嘿嘿!)</p>
-<pre><code>#pragma GCC optimize(3)
-#pragma GCC optimize(&quot;Ofast&quot;)
-#pragma GCC optimize(&quot;inline&quot;)
-#pragma GCC optimize(&quot;-fgcse&quot;)
-#pragma GCC optimize(&quot;-fgcse-lm&quot;)
-#pragma GCC optimize(&quot;-fipa-sra&quot;)
-#pragma GCC optimize(&quot;-ftree-pre&quot;)
-#pragma GCC optimize(&quot;-ftree-vrp&quot;)
-#pragma GCC optimize(&quot;-fpeephole2&quot;)
-#pragma GCC optimize(&quot;-ffast-math&quot;)
-#pragma GCC optimize(&quot;-fsched-spec&quot;)
-#pragma GCC optimize(&quot;unroll-loops&quot;)
-#pragma GCC optimize(&quot;-falign-jumps&quot;)
-#pragma GCC optimize(&quot;-falign-loops&quot;)
-#pragma GCC optimize(&quot;-falign-labels&quot;)
-#pragma GCC optimize(&quot;-fdevirtualize&quot;)
-#pragma GCC optimize(&quot;-fcaller-saves&quot;)
-#pragma GCC optimize(&quot;-fcrossjumping&quot;)
-#pragma GCC optimize(&quot;-fthread-jumps&quot;)
-#pragma GCC optimize(&quot;-funroll-loops&quot;)
-#pragma GCC optimize(&quot;-fwhole-program&quot;)
-#pragma GCC optimize(&quot;-freorder-blocks&quot;)
-#pragma GCC optimize(&quot;-fschedule-insns&quot;)
-#pragma GCC optimize(&quot;inline-functions&quot;)
-#pragma GCC optimize(&quot;-ftree-tail-merge&quot;)
-#pragma GCC optimize(&quot;-fschedule-insns2&quot;)
-#pragma GCC optimize(&quot;-fstrict-aliasing&quot;)
-#pragma GCC optimize(&quot;-fstrict-overflow&quot;)
-#pragma GCC optimize(&quot;-falign-functions&quot;)
-#pragma GCC optimize(&quot;-fcse-skip-blocks&quot;)
-#pragma GCC optimize(&quot;-fcse-follow-jumps&quot;)
-#pragma GCC optimize(&quot;-fsched-interblock&quot;)
-#pragma GCC optimize(&quot;-fpartial-inlining&quot;)
-#pragma GCC optimize(&quot;no-stack-protector&quot;)
-#pragma GCC optimize(&quot;-freorder-functions&quot;)
-#pragma GCC optimize(&quot;-findirect-inlining&quot;)
-#pragma GCC optimize(&quot;-fhoist-adjacent-loads&quot;)
-#pragma GCC optimize(&quot;-frerun-cse-after-loop&quot;)
-#pragma GCC optimize(&quot;inline-small-functions&quot;)
-#pragma GCC optimize(&quot;-finline-small-functions&quot;)
-#pragma GCC optimize(&quot;-ftree-switch-conversion&quot;)
-#pragma GCC optimize(&quot;-foptimize-sibling-calls&quot;)
-#pragma GCC optimize(&quot;-fexpensive-optimizations&quot;)
-#pragma GCC optimize(&quot;-funsafe-loop-optimizations&quot;)
-#pragma GCC optimize(&quot;inline-functions-called-once&quot;)
-#pragma GCC optimize(&quot;-fdelete-null-pointer-checks&quot;)
+                <p>现有三角形<code>ABC</code><br>
+<img src="https://gsblog.github.io/post-images/1659079841197.webp" alt="" loading="lazy"><br>
+则有斜边c，领边b与对边a<br>
+设角BAC为 角d<br>
+则</p>
+<pre><code>sin(d) = a / c
+cos(d) = b / c
+tan(d) = a / b
+cot(d) = b / a
+*sec(d) = c / b
+*csc(d) = c / a
 </code></pre>
 
             </div>
@@ -1156,7 +1122,7 @@ menulist.eq(i).show();
             <div class="postfooter">
                 <ul class="post-copyright">
                     <li><strong>文章作者：</strong> 俞果</li>
-            <li><strong>原文链接：</strong>https://gsblog.github.io/post/oidai-ma-jia-su-shou-fa-xiao/</li>
+            <li><strong>原文链接：</strong>https://gsblog.github.io/post/san-jiao-han-shu/</li>
             <li><strong>版权声明：</strong>本博客所有文章除特别声明外，均采用<i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA
                 许可协议。转载请注明出处！</li>
             </ul>
@@ -1183,33 +1149,19 @@ menulist.eq(i).show();
             
         <div id="otherpost">
             
-            <a  data-pjax class="prev-post-pc" href="https://gsblog.github.io/post/test/"  style="color: black;">
-                <div id="ppcontainer">
-                    
-                    
-                    <img src="/media/images/custom-postdefaultimage.png" style="width: 100%;" class="opimg">
-                    
-                    
-                    <h4 class="optitle">TEST</h4>
-                </div>
-            </a>
-            <div class="prev-post">
-                上一篇 <a  data-pjax href="https://gsblog.github.io/post/test/">TEST</a>
-            </div>
             
-            
-            <a data-pjax class="next-post-pc" href="https://gsblog.github.io/post/csp-j-zhi-shi-dian-zheng-li-or2or/"  style="color: black;">
+            <a data-pjax class="next-post-pc" href="https://gsblog.github.io/post/guan-yu-mo-yun-suan/"  style="color: black;">
                 <div id="npcontainer">
                     
                     
                     <img src="/media/images/custom-postdefaultimage.png" style="width: 100%;" class="opimg">
                     
                     
-                    <h4 class="optitle">#CSP-J知识点整理|2|</h4>
+                    <h4 class="optitle">关于模运算</h4>
                 </div>
             </a>
             <div class="next-post">
-                下一篇 <a  data-pjax href="https://gsblog.github.io/post/csp-j-zhi-shi-dian-zheng-li-or2or/">#CSP-J知识点整理|2|</a>
+                下一篇 <a  data-pjax href="https://gsblog.github.io/post/guan-yu-mo-yun-suan/">关于模运算</a>
             </div>
             
         </div>

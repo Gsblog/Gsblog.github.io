@@ -253,7 +253,7 @@ c.n个数的弹栈方案总数
                         src='https://gsblog.github.io/media/images/music.png' alt="音乐播放器" class="musicbtn"></i></a>
         </div>
         <div class="avatar-border">
-            <img src="https://gsblog.github.io/images/avatar.png?v=1659072658920" class="avatar">
+            <img src="https://gsblog.github.io/images/avatar.png?v=1659080208500" class="avatar">
         </div>
         <div class="sitename">果&amp;blog</div>
         <span class="description" data-text='["三行代码，让OJ报了十八行错"]'>&nbsp;</span>
@@ -263,7 +263,7 @@ c.n个数的弹栈方案总数
         </div>
         <div class="siteinfocontainer">
             <span class="siteinfo" id="siteinfo-postsnum"></span>
-            <span class="siteinfo">4</span>
+            <span class="siteinfo">5</span>
         </div>
         
         <div class="search">
@@ -490,6 +490,13 @@ c.n个数的弹栈方案总数
     
     <script>let postsnum = 0;</script>
     <div id="side-posttitle" style="display: none;">
+    
+    
+    三角函数
+    <script>
+        postsnum += 1
+    </script>
+    
     
     
     关于模运算
@@ -1103,15 +1110,15 @@ a.弹栈序列合法性的判断<br>
 b.后缀表达式的求值<br>
 c.n个数的弹栈方案总数<br>
 知识点2：后缀表达式：先压入2个数，在压入符号进行计算<br>
-如:(1 + 2) * 3 -&gt; 1 2 + 3 *<br>
+如:<code>(1 + 2) * 3 -&gt; 1 2 + 3 *</code><br>
 对于c 问题，有名师指导如下（不是我）：<br>
 若n=5, 为    1 2 3 4 5<br>
-若3最后弹栈，则1 2有f(2)种方法,3 4有f(2)种方法 总方案数：f(2) * f(2)<br>
-若2最后弹栈，则有f(1) * f(3) 种方案<br>
+若3最后弹栈，则1 2有<code>f(2)</code>种方法,3 4有<code>f(2)</code>种方法 总方案数：<code>f(2) * f(2)</code><br>
+若2最后弹栈，则有<code>f(1) * f(3)</code> 种方案<br>
 若4最后弹栈，则与2同理<br>
 以此类推<br>
-则总方案数f(5) = f(0)*f(4) + f(1)*f(3) + f(2)*f(2) + f(3)*f(1) + f(4)*f(0)<br>
-f(n) 为 卡特兰数<br>
+则总方案数<code>f(5) = f(0)*f(4) + f(1)*f(3) + f(2)*f(2) + f(3)*f(1) + f(4)*f(0)</code><br>
+<code>f(n)</code> 为 卡特兰数<br>
 练习题：2003 T3：http://oj.ac-code.com/problem/1014<br>
 例题1：入栈序列为a b c d e,则哪个出栈序列不合法?<br>
 A.a,b,c,d,e<br>
@@ -1140,15 +1147,15 @@ c.通过前/后序找根，中序找左右子树<br>
 知识点8：树与图的关系：树是无向无环连通图，点数=边数+1<br>
 例题2：<br>
 对于n个点，m条边的二叉树（m&gt;n），要删掉______条边让它变成树<br>
-分析：n = m + 1,m = n - 1，现m - ans = n - 1,则m - n + 1 = ans,删去m - n + 1条<br>
+分析：<code>n = m + 1</code>,<code>m = n - 1</code>，现<code>m - ans = n - 1</code>,则<code>m - n + 1 = ans</code>,删去<code>m - n + 1</code>条<br>
 例题3：<br>
-a * (b + c) * d 的后缀表达式为 ______<br>
-分析：根据概念可知，为 b c + a * d *<br>
+<code>a \* (b + c) \* d</code> 的后缀表达式为 ______<br>
+分析：根据概念可知，为 <code>b c + a \* d \*</code><br>
 4.图<br>
 知识点9：关于图：<br>
 a)遍历方式<br>
-1.BFS：从近到远<br>
-2.DFS：一条路摸到黑<br>
+1.<code>BFS</code>：从近到远<br>
+2.<code>DFS</code>：一条路摸到黑<br>
 b)连通分量<br>
 无向图 连通分量<br>
 有向图 强连通 弱连通<br>
