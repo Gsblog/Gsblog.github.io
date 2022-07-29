@@ -253,7 +253,7 @@ c.n个数的弹栈方案总数
                         src='https://gsblog.github.io/media/images/music.png' alt="音乐播放器" class="musicbtn"></i></a>
         </div>
         <div class="avatar-border">
-            <img src="https://gsblog.github.io/images/avatar.png?v=1659080208500" class="avatar">
+            <img src="https://gsblog.github.io/images/avatar.png?v=1659104193377" class="avatar">
         </div>
         <div class="sitename">果&amp;blog</div>
         <span class="description" data-text='["三行代码，让OJ报了十八行错"]'>&nbsp;</span>
@@ -595,7 +595,7 @@ c.n个数的弹栈方案总数
     get();
 
     function get() {
-        var t = JSON.parse('[]');
+        var t = JSON.parse('[{"author":"","img":"","text":"","time":""}]');
         talkindex = t.length - 1;
         for (var i = 0; i <= t.length - 1; i++) {
             var d = {};
@@ -786,13 +786,13 @@ c.n个数的弹栈方案总数
                 shareInit();
             if (donateChoice)
                 donateInit();
-            if ("default" == "default"&&!commentsHide) {
+            if ("valine" == "default"&&!commentsHide) {
                 $("#comment").hide()
                 commentsHide = true
             }
             lazyload();
             codeinit();
-            if ("default" == "twikoo") {
+            if ("valine" == "twikoo") {
                 //twikoo头像更换
                 setTimeout(replaceAvatar, 3000);
                 setTimeout(replaceAvatar, 8000); //部分博主站点速度加载过慢，再添加一个延迟
@@ -1259,29 +1259,35 @@ b)连通分量<br>
                             
                                 
                                     
-                                        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+        <div id="vcomments">
+        </div>
+        <script>
+            var valine = new Valine();
+            var curpath = window.location.pathname;
+            if (curpath[curpath.length - 1] != '/')
+                curpath += '/'
+            valine.init({
+                el: '#vcomments',
+                appId: 'VI6UgMnplH7Xw8Yp5eMLU8YT-gzGzoHsz',
+                appKey: 'wS1GmdWWwfetxDuCKizb0P4R',
+                avatar: 'retro',
+                pageSize: 10,
+                placeholder: '既然来了，何不畅所欲言呢？',
+                recordIP: true,
+                path: curpath //[重点] 记得添加path路径
+            });
+        </script>
+        <script type="text/javascript">
+            var jrsc = '既然来了，何不畅所欲言呢？';
+            jinrishici.load(function (result) {
+                // 自己的处理逻辑
+                jrsc = result.data.content + "\n「" + result.data.origin.title + "」" + result.data.origin
+                    .dynasty + " · " + result.data.origin.author;
+            });
+        </script>
 
-<div id="gitalk-container"></div>
 
-<script>
-
-  var gitalk = new Gitalk({
-    clientID: '5d836ef7ba7accf7796c',
-    clientSecret: 'c3c18dcb76f31475e45afc5b7802cc5027e8311a',
-    repo: 'Gsblog.github.io',
-    owner: 'Gsblog',
-    admin: ['Gsblog'],
-    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
-    distractionFreeMode: false  // Facebook-like distraction free mode
-  })
-
-  gitalk.render('gitalk-container')
-
-</script>
-
-                                    
-                                    
+                                    <div class="clear"></div>
                                 
                             
                         </div>
