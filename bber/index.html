@@ -120,7 +120,7 @@ $(document).ready(function(){
                         src='https://gsblog.github.io/media/images/music.png' alt="音乐播放器" class="musicbtn"></i></a>
         </div>
         <div class="avatar-border">
-            <img src="https://gsblog.github.io/images/avatar.png?v=1659104686944" class="avatar">
+            <img src="https://gsblog.github.io/images/avatar.png?v=1659141959102" class="avatar">
         </div>
         <div class="sitename">果&amp;blog</div>
         <span class="description" data-text='["三行代码，让OJ报了十八行错"]'>&nbsp;</span>
@@ -1074,15 +1074,15 @@ menulist.eq(i).show();
     <!-- 解析微信表情（参考：https://github.com/buddys/qq-wechat-emotion-parser） -->
     <!-- <script src="https://cdn.jsdelivr.net/gh/buddys/qq-wechat-emotion-parser@master/dist/qq-wechat-emotion-parser.min.js"></script> -->
 <script>
-    var limitstr = '5'
+    var limitstr = '10'
     lnum = parseInt(limitstr)
     ispeakBber.init({
             el: '#speak', // 容器选择器
-            name: '', // 显示的昵称
+            name: '一起吐槽吧！', // 显示的昵称
             envId: '', // 环境id
             region: 'ap-shanghai', // 腾讯云地址，默认为上海
             limit: lnum, // 每次加载的条数，默认为5
-            avatar: '',
+            avatar: 'https://ts1.cn.mm.bing.net/th/id/R-C.beb5846dd781ffdc31711ffd8e03b0b9?rik=%2fULLllLK8d9HNA&amp;riu=http%3a%2f%2fvorcdn.xiaodutv.com%2f96096453b71bb5246f027fe03139c9de&amp;ehk=vFA6nPOfRVlVjShCwc8I9ZnSQvrc8YzMuPUgpzzWP%2bw%3d&amp;risl=&amp;pid=ImgRaw&amp;r=0',
             fromColor: 'rgb(245, 150, 170)', // 下方标签背景颜色 默认 rgb(245, 150, 170)
             loadingImg: 'https://7.dusays.com/2021/03/04/d2d5e983e2961.gif', // 自定义loading的图片，示例值为默认值
             dbName: 'talks' // 数据的名称，默认talks，避免有人的命名不是这个，所以加入此配置字段。
@@ -1141,6 +1141,69 @@ menulist.eq(i).show();
                 <div class="col-xs-6 col-sm-3"></div>
             </div>
             
+                <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+</head>
+
+<body>
+    <div class="miniMode">
+        <meting-js id="myaplayer" server="netease" type="playlist" fixed="true" order="default" muted="muted">
+        </meting-js>
+    </div>
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+<script>
+    function aplayerInit() {
+        var aplayerid = "3644079651";
+        var aplayerserver = "tencent";
+        var aplayerorder = "default";
+        var aplayerautoplay = "false";
+        var aplayer = $("#myaplayer");
+        aplayer.attr("server", aplayerserver);
+        aplayer.attr("id", aplayerid);
+        aplayer.attr("order", aplayerorder);
+        if (aplayerautoplay == "true")
+            aplayer.attr("autoplay", "true");
+    }
+    aplayerInit();
+</script>
+
+<script src="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/js/Aplayer.min.js"></script>
+<!-- require MetingJS -->
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+<script>
+    function aplayerbtnInit() {
+        var player = document.querySelectorAll('meting-js')[0].aplayer;
+        if(player==undefined)return false;
+        player.lrc.hide();
+        var mbabtn = $("#mbaplayer");
+        if (player.paused == false) {
+            mbabtn.removeClass("fa-play-circle-o");
+            mbabtn.addClass("fa-pause-circle");
+        } else {
+            mbabtn.addClass("fa-play-circle-o");
+            mbabtn.removeClass("fa-pause-circle");
+        }
+    }
+
+    function aplayerPlay() {
+        var player = document.querySelectorAll('meting-js')[0].aplayer;
+        var mbabtn = $("#mbaplayer");
+        if (player.paused == true) {
+            player.play();
+            mbabtn.removeClass("fa-play-circle-o");
+            mbabtn.addClass("fa-pause-circle");
+        } else {
+            player.pause();
+            mbabtn.addClass("fa-play-circle-o");
+            mbabtn.removeClass("fa-pause-circle");
+        }
+    }
+</script>
+                
         </div>
         <div id="bg">
         </div>
